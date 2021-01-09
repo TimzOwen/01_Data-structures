@@ -53,6 +53,6 @@ uses the python key word del
 |:------------------------------|------------------------------------------------:|
 | len([1,2,3,4])                | 4                  | Find lenght of list        |
 | [2,4,6] + [6,8,10]            | [2,4,6,8,10]       | List concatemation         |
-| ["Hey"]*3                     | ["Hey","Hey,"Hey"] | Repetitionof elements      |
-| 10 in [10,20,30]              | True               | check element memebers     |
+| ["Hey"] * 3                   | ["Hey","Hey,"Hey"] | Repetitionof elements      |
+|10 in [10,20,30]               | True               | check element memebers     |
 | for i in [2,3,4] print i      | 2,3,4              | iteratate elements in list |
