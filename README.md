@@ -1,21 +1,14 @@
-# Data-structures
+## Data-structures
 
 Data structures and algorithm
 
-## Topics covered
+### Topics covered
 
-Arrays
-
-lists
-
-Tuples
-
-Dictionary
-
-2-D Arrays
-
-Matrix
-
-Sets 
-
-Maps
+chapter one:
+  
+  introduction to data structures
+  Arrays
+  Lists
+  Dictionary
+  Sets
+  2-D arrays
