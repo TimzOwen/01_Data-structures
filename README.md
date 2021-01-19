@@ -7,8 +7,13 @@ Data structures and algorithm
 chapter one:
   
   introduction to data structures
+  
   Arrays
+  
   Lists
+  
   Dictionary
+  
   Sets
+  
   2-D arrays
