@@ -4,7 +4,7 @@ Data structures and algorithm
 
 ### Topics covered
 
-chapter one:
+#### chapter one:
   
   introduction to data structures
   
@@ -17,3 +17,15 @@ chapter one:
   Sets
   
   2-D arrays
+
+#### chapter 2
+  
+  Matrix
+  
+  Linked List
+  
+  stack 
+  
+  queue
+  
+  advanced Linked List
