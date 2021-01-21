@@ -17,8 +17,8 @@ Make sure to install __numpy__
 		   ['Fri',18,17,23,22],['Sat',12,22,20,18],
 		   ['Sun',13,15,19,16]])
     
-m = reshape(a,(7,5))
-print(m)
+	m = reshape(a,(7,5))
+	print(m)
 
 ### Accessing values:
 
