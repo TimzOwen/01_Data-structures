@@ -21,3 +21,14 @@ print(b[1][0]) # returns comp 3
 
 new_data = append(b,[["ICT",10,10,10,10]],0) # adds to the last part
 print(new_data)
+
+
+new_data = insert(b,[5],[[11],[11],[11]],1) # adds data to new columns 
+ 
+b = delete(b,[1],0) # deleting a row 0->row 
+
+b = delete(b,[1],1) # deleting a column
+
+b[2] = ["comp4",3,3,3,3] # updating existing values
+
+print(b)
