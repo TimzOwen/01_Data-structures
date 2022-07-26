@@ -1,42 +1,5 @@
 from collections import deque
 
-# simple list to add and pop items in an Array
-
-user_array = [] # empty array
-
-user_array.insert(0,90)
-user_array.insert(0,34)
-user_array.insert(1,400)
-
-print(user_array) # returns entire array
-# rerurns ----> [34, 400, 90]
-
-print(user_array.pop()) # removes first element inserted into the array
-
-
-# using deque()
-# flexible and double ended stack & queue
- # deque removes elements using FIFO,
-
-user_dequeue = deque()
-
-user_dequeue.appendleft(4)
-user_dequeue.appendleft(6)
-user_dequeue.appendleft(8)
-
-print(user_dequeue) # print out the dequeue
-
-print(user_dequeue.pop())   #removes using FIFO 
-user_dequeue.appendleft(10) # adds 10 to the queue
-
-print(user_dequeue)
-print(user_dequeue.popleft()) # removes the left side of the queue
-
-
-
-# QUEUE internal implementation functions
-from collections import deque
-
 class Queue:
     def __init__(self):
         self.buffer = deque()
