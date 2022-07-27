@@ -1,48 +1,25 @@
-from collections import deque
+from collections import queue
+from operator import le
 
 class Queue:
-    def __init__(self):
-        self.buffer = deque()
     
-    def enqueue(self,val):
-        self.buffer.appendleft(val)
-    
-    def dequeue(self):
-        return self.buffer.pop()
+    def __init__(self) -> None:
+        self.queue = []
         
-    def is_empty(self):
-        return len(self.buffer) == 0
+    # add an element
+    def enqueue(self, item):
+        self.queue.append(item)
+        
+    #remove an element
+    def dequeue(self):
+        if len(self.queue) < 1:
+            return None
+        return self.queue.pop(0)
     
+    # Display the queue
+    def display(self):
+        print(self.queue)
+        
+    # check the size of the queue
     def size(self):
-        return len(self.buffer)
-    
-user_queue = Queue() # instantiate a class
-
-user_queue.enqueue(
-    {'name': 'Timz',
-     'age': 40,
-     'school':'University of Nairobi'
-    }
-)
-user_queue.enqueue(
-    {'name': 'Owen',
-     'age': 20,
-     'school':'University of Mombasa'
-    }
-)
-user_queue.enqueue(
-    {'name': 'Excellency',
-     'age': 30,
-     'school':'University of Eldoret'
-    }
-)
-
-print(user_queue.size()) # returns the total number of elements in the dequeue
-
-for i in user_queue.buffer:
-    print(i) # return the items 
-
-
-print(user_queue.dequeue()) # removes first element inserted
-
-
+        return len(self.queue)
