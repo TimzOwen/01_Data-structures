@@ -1,4 +1,4 @@
-from collections import queue
+from collections import deque, queue
 from operator import le
 
 class Queue:
@@ -23,5 +23,16 @@ class Queue:
     # check the size of the queue
     def size(self):
         return len(self.queue)
-        
     
+    
+    
+# 
+class Queue:
+    def __init__(self):
+        self._elements = deque()
+        
+    def enqueue(self, element):
+        self._elements.append(element)
+    
+    def dequeue(self):
+        return self._elements.popleft()

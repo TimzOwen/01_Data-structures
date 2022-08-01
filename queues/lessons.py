@@ -1,4 +1,5 @@
 from collections import deque
+from collections import deque
 
 # simple list to add and pop items in an Array
 
@@ -112,6 +113,14 @@ class Queue:
         return len(self.queue)
 
 
-
-
-
+# implementation of dequeue
+# 
+class Queue:
+    def __init__(self):
+        self._elements = deque()
+        
+    def enqueue(self, element):
+        self._elements.append(element)
+    
+    def dequeue(self):
+        return self._elements.popleft()
