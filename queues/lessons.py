@@ -124,3 +124,7 @@ class Queue:
     
     def dequeue(self):
         return self._elements.popleft()
+    
+    
+def safaricom():
+    data_api = int(input("enter data api number"))
